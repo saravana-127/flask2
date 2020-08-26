@@ -4,6 +4,9 @@ files:
   - source: /
     destination: /var/www/applicat
   
+  - source: /applicat.wsgi
+    destination: /var/www/applicat
+  
   - source: /conf/applicat.conf
     destination: /etc/apache2/sites-available
 
