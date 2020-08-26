@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/http/sample-apps
+    destination: /var/www/applicat
 
-  - source: /conf/sample_apps.conf
+  - source: /conf/applicat.conf
     destination: /etc/apache2/sites-available
 
 hooks:
