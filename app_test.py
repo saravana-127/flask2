@@ -9,11 +9,6 @@ class TestFlaskApi(unittest.TestCase):
         self.app = app.test_client()
         self.app.testing = True
 
-    def test_get_all(self):
-        response = self.app.get('https://warm-retreat-38086.herokuapp.com/getusers')
-        data = json.loads(response.get_data())
-        self.assertEqual(response.status_code, 200)
-
 
     def test_get_user(self):
         response = self.app.get('https://warm-retreat-38086.herokuapp.com/searchuser/selva')
