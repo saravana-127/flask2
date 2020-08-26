@@ -5,6 +5,6 @@ logging.basicConfig(stream=sys.stderr)
 
 sys.path.insert(0, '/var/www/applicat')
 
-from app import app as application 
+from applicat import app as application 
 
 

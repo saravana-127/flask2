@@ -4,8 +4,8 @@ import pandas as pd
 from flask import Flask,jsonify,request,render_template
 from sqlalchemy.sql import label
 from sqlalchemy import func,distinct
-from app import db,app
-from app.models import User
+from applicat import db,app
+from applicat.models import User
 
 @app.route('/',methods=['GET'])
 def getuserslist():

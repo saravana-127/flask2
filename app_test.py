@@ -1,6 +1,6 @@
 import unittest
 import json
-from app import app
+from applicat import app
 
 
 class TestFlaskApi(unittest.TestCase):
