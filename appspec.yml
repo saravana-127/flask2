@@ -1,12 +1,32 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: /applicat
     destination: /var/www/applicat
-  
   - source: /applicat.wsgi
     destination: /var/www/applicat
-  
+  - source: /conf
+    destination: /var/www/applicat
+  - source: /migrations
+    destination: /var/www/applicat
+  - source: /scripts
+    destination: /var/www/applicat
+  - source: /__pycache__
+    destination: /var/www/applicat
+  - source: /app_test.py
+    destination: /var/www/applicat
+  - source: /appspec.yml
+    destination: /var/www/applicat
+  - source: /buildspec.yml
+    destination: /var/www/applicat
+  - source: /cluster.db
+    destination: /var/www/applicat
+  - source: /config.py
+    destination: /var/www/applicat
+  - source: /new.csv
+    destination: /var/www/applicat
+  - source: /requirements.txt
+    destination: /var/www/applicat
   - source: /conf/applicat.conf
     destination: /etc/apache2/sites-available
 
