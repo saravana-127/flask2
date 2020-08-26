@@ -1,12 +1,12 @@
 version: 0.0
 os: linux
 files:
-  - source: /main.wsgi
+  - source: /
+    destination: /var/www/applicat
+
+  - source: /applicat.wsgi
     destination: /var/www/applicat
   
-  - source: /
-    destination: /home/ubuntu/applicat  
-
   - source: /conf/applicat.conf
     destination: /etc/apache2/sites-available
 
