@@ -7,7 +7,7 @@ from sqlalchemy import func,distinct
 from app import db,app
 from app.models import User
 
-@app.route('/getusers',methods=['GET'])
+@app.route('/',methods=['GET'])
 def getuserslist():
     try:
         all_user=User.query.all()
