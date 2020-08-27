@@ -88,7 +88,7 @@ def search_user_by_department(department):
         return jsonify({'message':'not a valid department'}),400   
 
 
-@app.route('/',methods=['GET'])
+@app.route('/barchart',methods=['GET'])
 def student_barchart():
     student_datas= db.session.query(label('department',User.department),label('count',func.count(User.department))).group_by(User.department).all()
     student_list=[]
