@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/applicat
+    destination: /var/www/apprepo
       
-  - source: /conf/applicat.conf
+  - source: /conf/apprepo.conf
     destination: /etc/apache2/sites-available
 
 hooks:

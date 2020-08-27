@@ -2,6 +2,10 @@ apt update
 apt-get -y install python3-pip
 apt-get -y install apache2
 apt-get -y install libapache2-mod-wsgi-py3
+pip3 install virtualenv
+cd /var/www/apprepo
+virtualenv env
+source env/bin/activate
 pip3 install alembic==1.4.2 
 pip3 install Flask==1.1.2 
 pip3 install Flask-Migrate==2.5.3 

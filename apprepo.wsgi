@@ -3,9 +3,9 @@
 import sys 
 import logging
 logging.basicConfig(stream=sys.stderr)
-sys.path.insert(0, '/var/www/applicat')
+sys.path.insert(0, '/var/www/apprepo')
 
-from applicat import app as application
+from apprepo import app as application
 application.secret_key="neeyo09876543" 
 
 

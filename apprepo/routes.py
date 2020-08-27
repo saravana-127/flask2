@@ -4,8 +4,8 @@ import pandas as pd
 from flask import Flask,jsonify,request,render_template
 from sqlalchemy.sql import label
 from sqlalchemy import func,distinct
-from applicat import db,app
-from applicat.models import User
+from apprepo import db,app
+from apprepo.models import User
 
 @app.route('/',methods=['GET'])
 def getuserslist():
@@ -88,7 +88,7 @@ def search_user_by_department(department):
         return jsonify({'message':'not a valid department'}),400   
 
 
-@app.route('/barchart',methods=['GET'])
+@app.route('/',methods=['GET'])
 def student_barchart():
     student_datas= db.session.query(label('department',User.department),label('count',func.count(User.department))).group_by(User.department).all()
     student_list=[]
